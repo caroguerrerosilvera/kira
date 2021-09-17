@@ -1,6 +1,6 @@
-# About Kira
+# About Kira project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Kira is a didactic project in which I seek to better understand how react works.
 
 ### Goal
 
