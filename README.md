@@ -25,4 +25,3 @@ The render function should be able to render components with children, props, te
 ### Resources
 
 - https://pomb.us/build-your-own-react/
-- 
