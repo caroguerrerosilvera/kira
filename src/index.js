@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Kira from './kira';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const otherElement = (
+  <div>
+    <h1 class="title">Soy un título</h1>
+
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const element = Kira.createElement(
+  "div",
+  { id: "foo" },
+  Kira.createElement("a", null, "bar"),
+  Kira.createElement("b")
+)
+const container = document.getElementById("root");
+const containerWithoutJSX = document.getElementById("withoutJSX");
+Kira.render(otherElement, container);
+Kira.render(element, containerWithoutJSX);
